@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	
+
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+  crossorigin="anonymous"
+/>
+
+    <link rel="stylesheet" href="pop2.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <nav>
+    <ul class="nav-list">
+      <h1>STAYCLEAN PROFESSIONAL</h1>
+      <li class="nav-item">
+         
+           <li class="nav-item">
+            <section>
+              <div class="center">
+                <!-- <h1>click the button below to pop up a Window!</h1> -->
+                <button type="button">New Transaction</button>
+              </div>
+            </section>
+        
+            <div class="modal-parent">
+              <div class="modal">
+                <section class="container">
+                  <header>Update</header>
+                  <form action="#" class="form">
+                    <div class="input-box1">
+                      <label>Num:
+                      <input  type="text" placeholder="No.1" required id="num"/></label>
+                      <label>Name:
+                      <input type="text" placeholder="Enter full name" required /></label>
+                      <label>Categories:
+                        <select name="Categories" id="Categories">
+                            <option value="Men"></option>
+                            <option value="Men">Men</option>
+                            <option value="Women">Women</option>
+                            <option value="Covers">Covers</option>
+                        </select></label>
+                    </div>
+            
+    
+                    <div class="gender-box">
+                      <div class="gender-option">
+                        <label for=""><p>Ironing Normal</p><input type="text"></label>
+                        <label for=""><p>Laundry Normal</p><input type="text"></label>
+                        <label for=""><p>Laundry and Ironing Normal</p><input type="text"></label>
+                        <label for=""><p>Dry Wash Normal</p><input type="text"></label>
+                      </div>
+                      <div class="gender-option">
+                        <label for=""><p>Ironing Fast</p><input type="text"></label>
+                        <label for=""><p>Laundry Fast</p><input type="text"></label>
+                        <label for=""><p>Laundry and Ironing Fast</p><input type="text"></label>
+                        <label for=""><p>Dry Wash Fast</p><input type="text"></label>
+                      </div>
+                    </div>
+                    <div class="input-box-address">
+                        <label for="">Stain Removal <input type="text"></label>
+                        <label for="">Dry Up <input type="text"></label>
+                    </div>
+                    <button>Submit</button>
+                  </form>
+                </section>
+                <span class="X" draggable="true">&times;</span>
+              </div>
+            </div>
+          
+
+
+    
+      <div class="search" id="search-bar">
+        <input class="search-txt" type="text" placeholder="  Search Customers..." />
+        <!-- <button class="submit"><i class="fas fa-search"></i></button> -->
+      </div>
+      
+      </div>
+      <li class="nav-item"> 
+        <a href="#">
+          <span class="iconnav"><ion-icon name="person-circle-outline"></ion-icon></span> </a>
+      </li>
+      
+    </ul>
+  </nav>
+  
+  <div class="navigation">
+    <div class="menuToggle"></div>
+    <ul>
+      <li class="list active" style="--clr:#f44336;">
+        <a href="#">
+          <span class="icon"><ion-icon name="home-outline"></ion-icon>
+          </span>
+          <span class="text">Home</span>
+        </a>
+      </li>
+      <li class="list" style="--clr:#ff7653;">
+        <a href="#">
+          <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
+          <span class="text">Sales</span>
+        </a>
+      </li>
+      <li class="list" style="--clr:#ffa117;">
+        <a href="#">
+          <span class="icon"><ion-icon name="wallet-outline"></ion-icon></span>
+          <span class="text">Expenses</span>
+        </a>
+      </li>
+      <li class="list" style="--clr:#0fc70f;">
+        <a href="#">
+          <span class="icon"><ion-icon name="code-working-outline"></ion-icon></span>
+          <span class="text">Inventory</span>
+        </a>
+      </li>
+      <li class="list" style="--clr:#2196f3;">
+        <a href="#">
+          <span class="icon"><ion-icon name="repeat-outline"></ion-icon></span>
+          <span class="text">Report</span>
+        </a>
+      </li>
+      <li class="list" style="--clr:#b145e9;">
+        <a href="#">
+          <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+          <span class="text">Setting</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- Main -->
+  <div class="grid-container">
+    <main class="main-container">
+      <div class="main-title">
+        <h2>DASHBOARD</h2>
+      </div>
+
+      <div class="main-cards">
+
+        <div class="card">
+          <div class="card-inner">
+            <h3>PRODUCTS</h3>
+            <span class="material-icons-outlined">inventory_2</span>
+          </div>
+          <h1>249</h1>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <h3>CATEGORIES</h3>
+            <span class="material-icons-outlined">category</span>
+          </div>
+          <h1>25</h1>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <h3>CUSTOMERS</h3>
+            <span class="material-icons-outlined">groups</span>
+          </div>
+          <h1>1500</h1>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <h3>ALERTS</h3>
+            <span class="material-icons-outlined">notification_important</span>
+          </div>
+          <h1>56</h1>
+        </div>
+
+      </div>
+
+      </div>
+    </main>
+    <!-- End Main -->
+  </div>
+<!-- SIDEBAR -->
+<section id="sidebar">
+		
+  <!-- </section> -->
+  <!-- SIDEBAR -->
+
+  <!-- NAVBAR -->
+  <section id="content">
+    <nav>
+      <i class='toggle-sidebar' ></i>
+      </div>
+      </form>
+    <div class="profile">
+        <img src="#" alt="">
+        
+      </div>
+    </nav>
+</section>
+
+
+
+  
+  
+  <script src="app.js"></script>
+  <script src="pop.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- ApexCharts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+<!-- Custom JS -->
+</body>
+</html>
