@@ -62,6 +62,12 @@
     border-color:  #FC3B56;
   }
 
+  #output {
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
 
 
   @keyframes drop {

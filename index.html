@@ -43,14 +43,14 @@
               <div class="modal">
                 <section class="container">
                   <header>Update</header>
-                  <form action="#" class="form">
+                  <form action="./results.html" class="form" id="myForm">
                     <div class="input-box1">
                       <label>Num:
-                      <input  type="text" placeholder="No.1" required id="num"/></label>
+                      <input  type="text" placeholder="No.1" required id="num" name="name"/></label>
                       <label>Name:
-                      <input type="text" placeholder="Enter full name" required /></label>
+                      <input type="text" placeholder="Enter full name" required  name="name1" id="name1"/></label>
                       <label>Categories:
-                        <select name="Categories" id="Categories">
+                        <select  name="name2" id="Categories">
                             <option value="Men"></option>
                             <option value="Men">Men</option>
                             <option value="Women">Women</option>
@@ -61,24 +61,26 @@
     
                     <div class="gender-box">
                       <div class="gender-option">
-                        <label for=""><p>Ironing Normal</p><input type="text"></label>
-                        <label for=""><p>Laundry Normal</p><input type="text"></label>
-                        <label for=""><p>Laundry and Ironing Normal</p><input type="text"></label>
-                        <label for=""><p>Dry Wash Normal</p><input type="text"></label>
+                        <label for=""><p>Ironing Normal</p><input type="text" name="name3" id="name3"></label>
+                        <label for=""><p>Laundry Normal</p><input type="text" name="name4"id="name4"></label>
+                        <label for=""><p>Laundry and Ironing Normal</p><input name="name5" id="name5" type="text"></label>
+                        <label for=""><p>Dry Wash Normal</p><input type="text" name="name6"id="name6"></label>
                       </div>
                       <div class="gender-option">
-                        <label for=""><p>Ironing Fast</p><input type="text"></label>
-                        <label for=""><p>Laundry Fast</p><input type="text"></label>
-                        <label for=""><p>Laundry and Ironing Fast</p><input type="text"></label>
-                        <label for=""><p>Dry Wash Fast</p><input type="text"></label>
+                        <label for=""><p>Ironing Fast</p><input type="text" name="name7"id="name7"></label>
+                        <label for=""><p>Laundry Fast</p><input type="text" name="name8"id="name8"></label>
+                        <label for=""><p>Laundry and Ironing Fast</p><input  name="name9"type="text"id="name9"></label>
+                        <label for=""><p>Dry Wash Fast</p><input type="text" name="name10"id="name10"></label>
                       </div>
                     </div>
                     <div class="input-box-address">
-                        <label for="">Stain Removal <input type="text"></label>
-                        <label for="">Dry Up <input type="text"></label>
+                        <label for="">Stain Removal <input type="text" name="name11" id="name11"></label>
+                        <label for="">Dry Up <input type="text" name="name12" id="name12"></label>
                     </div>
                     <button>Submit</button>
+                    <!-- <input type="submit" value="submit"/> -->
                   </form>
+
                 </section>
                 <span class="X" draggable="true">&times;</span>
               </div>
