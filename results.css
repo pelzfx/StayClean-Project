@@ -7,7 +7,7 @@ body{
 
 .input-box1{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 1.5rem;
 }
 
@@ -38,4 +38,19 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+}
+
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+.header p{
+    display: flex;
+    justify-content: center;
 }

@@ -22,6 +22,23 @@ function disappearParent(e) {
   }
 }
 
+function calculatesum(){
+  var name3 = parseInt(document.getElementById('name3').value);
+  var name4 = parseInt(document.getElementById('name4').value);
+  var name5 = parseInt(document.getElementById('name5').value);
+  var name6 = parseInt(document.getElementById('name6').value);
+  var name7 = parseInt(document.getElementById('name7').value);
+  var name8 = parseInt(document.getElementById('name8').value);
+  var name9 = parseInt(document.getElementById('name9').value);
+  var name10 = parseInt(document.getElementById('name10').value);
+  var name11 = parseInt(document.getElementById('name11').value);
+  var name12 = parseInt(document.getElementById('name12').value);
+
+  var total = name3 + name4 + name5 + name6 + name7 + name8 + name9 + name10 + name11 + name12; 
+  // document.getElementById('total').innerHTML = total;
+}
+// window.location.href = "results.html?total=" + total;
+
 document.getElementById('myForm').addEventListener('submit', function(e) {
   // get the value of the name input field
   var name = document.getElementsById('num').value;
@@ -37,13 +54,13 @@ document.getElementById('myForm').addEventListener('submit', function(e) {
   var name10= document.getElementsById('name10').value;
   var name11= document.getElementsById('name11').value;
   var name12= document.getElementsById('name12').value;
+  var total= document.getElementsById('total').value;
 
-  var data = {name, name1, name2, name3, name4, name5, name6, name7, name8, name9, name10, name11, name12}
+  var data = {name, name1, name2, name3, name4, name5, name6, name7, name8, name9, name10, name11, name12, total}
   // redirect to a new page and pass the name as a URL parameter
   // window.location = 'results.html?name=' + name + 'name=' + name1;
   localStorage.setItem("userdata", JSON.stringify(data))
 });
-
 
 
 
