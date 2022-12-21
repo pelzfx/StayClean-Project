@@ -1,7 +1,4 @@
-var urlParams = new URLSearchParams(window.location.search);
-var total = urlParams.get("total");
-document.getElementById('total').innerHTML = total;
-// var total = name3 + name4 + name5 + name6 + name7 + name8 + name9 + name10 + name11 + name12; 
+var urlParams = new URLSearchParams(window.location.search); 
 
 // update the page to display the name
 document.getElementById('num').innerHTML = urlParams.get('name');
@@ -17,14 +14,8 @@ document.getElementById('name9').innerHTML = urlParams.get('name9');
 document.getElementById('name10').innerHTML = urlParams.get('name10');
 document.getElementById('name11').innerHTML = urlParams.get('name11');
 document.getElementById('name12').innerHTML = urlParams.get('name12');
-// document.getElementById('total').innerHTML = urlParams.get('total');
+// document.getElementById('total').innerHTML = urlParams.get('')
 
-window.onload = function() {
-    // var url = new URL(window.location.href);
-    // var total = url.searchParams.get("total");
-  }
- 
-  
 
 function printPage(){
     window.print();

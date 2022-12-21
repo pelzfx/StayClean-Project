@@ -34,8 +34,12 @@ function calculatesum(){
   var name11 = parseInt(document.getElementById('name11').value);
   var name12 = parseInt(document.getElementById('name12').value);
 
+ 
   var total = name3 + name4 + name5 + name6 + name7 + name8 + name9 + name10 + name11 + name12; 
-  // document.getElementById('total').innerHTML = total;
+  document.getElementById('total').innerHTML = total;
+  // localStorage.setItem("total", totalSum);
+  
+  // localStorage.setItem('total', total);
 }
 // window.location.href = "results.html?total=" + total;
 
@@ -54,11 +58,10 @@ document.getElementById('myForm').addEventListener('submit', function(e) {
   var name10= document.getElementsById('name10').value;
   var name11= document.getElementsById('name11').value;
   var name12= document.getElementsById('name12').value;
-  var total= document.getElementsById('total').value;
+  // var total = document.getElementsById('total').value;
 
-  var data = {name, name1, name2, name3, name4, name5, name6, name7, name8, name9, name10, name11, name12, total}
-  // redirect to a new page and pass the name as a URL parameter
-  // window.location = 'results.html?name=' + name + 'name=' + name1;
+  
+
   localStorage.setItem("userdata", JSON.stringify(data))
 });
 
