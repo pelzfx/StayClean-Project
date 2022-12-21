@@ -33,15 +33,18 @@ function calculatesum(){
   var name10 = parseInt(document.getElementById('name10').value);
   var name11 = parseInt(document.getElementById('name11').value);
   var name12 = parseInt(document.getElementById('name12').value);
+  // var totalPrint = document.getElementById("total-print")
 
  
-  var total = name3 + name4 + name5 + name6 + name7 + name8 + name9 + name10 + name11 + name12; 
+  let total = name3 + name4 + name5 + name6 + name7 + name8 + name9 + name10 + name11 + name12; 
   document.getElementById('total').innerHTML = total;
-  // localStorage.setItem("total", totalSum);
+
+  return total
   
-  // localStorage.setItem('total', total);
 }
 // window.location.href = "results.html?total=" + total;
+
+// export let tots = calculatesum()
 
 document.getElementById('myForm').addEventListener('submit', function(e) {
   // get the value of the name input field
@@ -58,7 +61,7 @@ document.getElementById('myForm').addEventListener('submit', function(e) {
   var name10= document.getElementsById('name10').value;
   var name11= document.getElementsById('name11').value;
   var name12= document.getElementsById('name12').value;
-  // var total = document.getElementsById('total').value;
+  var total = document.getElementsById('total').value;
 
   
 

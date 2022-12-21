@@ -58,7 +58,7 @@ li, a, button{
   line-height: 1px;
   font-size: 35px;
 }
-.grid-container {
+/* .grid-container {
   display: grid;
   grid-template-columns: 260px 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 3fr;
@@ -66,6 +66,17 @@ li, a, button{
     "sidebar header header header"
     "sidebar main main main";
   height: 100vh;
+} */
+.grid-container {
+  display: flex;
+  grid-template-columns: 260px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas:
+    "sidebar header header header"
+    "sidebar main main main";
+  height: 100vh;
+  padding-left: 20%;
+  padding-top: 2%;
 }
 .main-title h2{
   color: black;
@@ -153,7 +164,8 @@ body {
   margin: 40px;
   text-transform: capitalize;
 } */
-button{
+/* button{
+  align-items: center;
   margin: 0 auto;
   height: 60px;
   width: 500px;
@@ -162,6 +174,18 @@ button{
   border-radius: 6px;
   font-size: 25px;
   color: #000;
+  cursor: pointer;
+} */
+button{
+  align-items: center;
+  margin: 0 auto;
+  height: 40px;
+  width: 200px;
+  background: #5454ff;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -180,6 +204,13 @@ button{
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  left: 40%;
+  /* justify-content: center; */
+}
+.container h1{
+  align-items: center;
+  margin-right: 20%;
+  font-size: 25px;
 }
 .container header {
   font-size: 1.5rem;
@@ -287,7 +318,8 @@ button{
   margin-top: 5%;
   background: white;
   box-shadow: 0px 0px 10px var(--clr-gray200);
-  padding: 1rem 0;
+  padding: 0;
+  /* padding: 1rem 0; */
   border-radius: var(--radius);
   display: flex;
   /* justify-content: flex-end; */
@@ -298,9 +330,16 @@ button{
   list-style: none;
   margin-right: 2rem;
 }
+.nav-item .center{
+  padding-left: 40px;
+}
+.search{
+  padding-top: 11px;
+}
 .nav-list h1{
   color: blue;
-  padding-left: 15px;
+  padding-left: 65px;
+  padding-right: 50px;
 
   /* padding-left: 10px; */
 
