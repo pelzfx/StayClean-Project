@@ -31,13 +31,13 @@ function calculatesum(){
   var name8 = parseInt(document.getElementById('name8').value);
   var name9 = parseInt(document.getElementById('name9').value);
   var name10 = parseInt(document.getElementById('name10').value);
-  var name11 = parseInt(document.getElementById('name11').value);
-  var name12 = parseInt(document.getElementById('name12').value);
+  // var name11 = parseInt(document.getElementById('name11').value);
+  // var name12 = parseInt(document.getElementById('name12').value);
   // var totalPrint = document.getElementById("total-print")
 
  
-  let total = name3 + name4 + name5 + name6 + name7 + name8 + name9 + name10 + name11 + name12; 
-  document.getElementById('total').innerHTML = total;
+  let total = name3 + name4 + name5 + name6 + name7 + name8 + name9 + name10 
+  document.getElementById('totalVal').value = total;
 
   return total
   
@@ -61,16 +61,17 @@ document.getElementById('myForm').addEventListener('submit', function(e) {
   var name10= document.getElementsById('name10').value;
   var name11= document.getElementsById('name11').value;
   var name12= document.getElementsById('name12').value;
-  var total = document.getElementsById('total').value;
+  var total = calculatesum();
 
+  // data = [{name, name1, name2, name3, name4, name5, name6, name7, name8, name9, name10, name11, name12, total}]
   
 
-  localStorage.setItem("userdata", JSON.stringify(data))
+  window.localStorage.setItem(currentUserTotal, total)
 });
 
 
 
 // get the name from the URL parameter
-var urlParams = new URLSearchParams(window.location.search);
+// var urlParams = new URLSearchParams(window.location.search);
 // var name = urlParams.get('name');
 
