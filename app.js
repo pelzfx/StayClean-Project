@@ -17,9 +17,9 @@ let searchBtn = document.querySelector('searchBtn');
 let closeBtn = document.querySelector('closeBtn');
 let searchBox = document.querySelector('.searchBox');
 
-searchBtn.onclick = function(){
-  searchBox.classList.add('active');
-}
+// searchBtn.onclick = function(){
+//   searchBox.classList.add('active');
+// }
 
 
 // SIDEBAR DROPDOWN
@@ -155,8 +155,8 @@ tooltip: {
 },
 };
 
-var chart = new ApexCharts(document.querySelector("#chart"), options);
-chart.render();
+// var chart = new ApexCharts(document.querySelector("#chart"), options);
+// chart.render();
 // BAR CHART
 // var barChartOptions = {
 //   series: [{
